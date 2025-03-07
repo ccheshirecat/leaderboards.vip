@@ -1,0 +1,20 @@
+name = "leaderboards-auth"
+main = "src/workers/auth.ts"
+compatibility_date = "2024-03-07"
+account_id = "c1a92f72340abcdc288b9986018dc79f"
+
+# Routes for your worker - update as needed
+# routes = [
+#   { pattern = "api.leaderboards.vip/auth/*", zone_name = "leaderboards.vip" }
+# ]
+
+# Environment variables - these will be set in the Cloudflare dashboard
+[vars]
+SUPERTOKENS_CONNECTION_URI = "http://localhost:3567"  # This should be replaced with your actual SuperTokens Core URL
+SUPERTOKENS_API_KEY = ""  # Add your API key if applicable
+API_DOMAIN = "http://localhost:3000"  # For local development
+WEBSITE_DOMAIN = "http://localhost:4200"  # For local development
+
+# Local development settings
+[dev]
+port = 8787 
